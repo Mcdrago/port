@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  background: #0a0a0a;
+  color: white;
+}
+
+/* NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.logo {
+  color: gold;
+  font-weight: 700;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: gold;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: gold;
+}
+
+.typing {
+  color: #f5d76e;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.hero-img img {
+  width: 250px;
+  filter: drop-shadow(0 0 20px gold);
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 80px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: gold;
+  margin-bottom: 25px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* CARDS */
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #222;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: gold;
+  transform: translateY(-5px);
+}
+
+/* EXPERIENCE */
+.large img {
+  width: 90px;
+  margin-top: 15px;
+  opacity: 0.8;
+}
+
+/* CONTACT */
+.contact-box {
+  background: #111;
+  padding: 20px;
+  border-left: 4px solid gold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+}
+
+/* ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
